@@ -1,111 +1,115 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>甜甜网址-永久引导页</title>
-<link rel="icon" type="image/png" href="favicon.ico"/>
-<meta http-equiv="content-type" content="*; charset=utf-8" />
-<meta name="description" content="甜甜网址-永久引导页" />
-<script type="text/javascript" src="https://arley.fun/onesay/?format=js&charset=utf-8"></script>
-<script src="js/skel.min.js"></script>
-<script src="js/init.js"></script>
-<link rel="stylesheet" href="css/iconfont.css">
-<link rel="stylesheet" href="css/style.css"/>
-<link rel="stylesheet" href="css/style-wide.css"/>
-</head>
-<body class="loading">
-	<div id="wrapper">
-	<div id="bg" style="display: none;" class="phone-class"></div>
-	<video src="https://arley.fun/usr/video/2.mp4" class="pc-class" loop width="100%" height="110%" autoplay="autoplay" muted="muted" cue-before:none; id="sp"></video>
-	<div id="overlay"></div>
-	<div id="main">
-<header id="header">
-	<h1>甜甜网址-永久引导页</h1>
-	<div id="onesay"><script>onesay()</script></div>
-	<nav>
-		<ul>
-			<li><a href="https://iosyyds.net" target="_blank" title="甜甜导航" class="iconfont icon-home2"><span>甜甜导航</span></a></li>
-			<li><a href="https://pan.iosyyds.net" target="_blank" title="甜甜网盘" class="iconfont icon-home2"><span>甜甜网盘</span></a></li>
-			<li><a href="https://ka.529k.cc/links/D6D75BD8" target="_blank" title="苹果证书" class="iconfont icon-cloud-full"><span>苹果证书</span></a></li>
-			<li><a href="https://haokawx.lot-ml.com/Product/Index/8488" target="_blank" title="免费流量卡" class="iconfont icon-labelb"><span>免费流量卡</span></a></li>
-			<li><a href="https://iosyyds.github.io/shadowrocket" target="_blank" title="免费小火箭" class="iconfont icon-labelb"><span>免费小火箭</span></a></li>
-		</ul>
-	</nav>
-</header>
-<!-- Footer -->
-<footer id="footer">
-	<div>
-		<img src="public/close.png" onclick="changeVal()" class="ival" style="margin-right:2rem ;" id="voice"/>
-		<img src="public/play.png" onclick="ispaly()" class="ival" id="bofang"/>
-		<img src="public/next.png" onclick="nextPaly()" class="ival" style="margin-left:2rem ;" id="next"/>
-	</div>
-</footer>
-</div>
-</div>
-<script>
-	const srcs = [
-		"https://arley.fun/usr/video/1.mp4",
-		"https://arley.fun/usr/video/2.mp4"
-	]
-	function changeVal(){
-		var voice=document.querySelector("#voice");
-		var video=document.querySelector("#sp");
-		if(video.muted) {
-			video.muted=false;
-			voice.setAttribute("src","public/open.png");
-		}else{
-			video.muted=true;
-			voice.setAttribute("src","public/close.png");
-		}
-	}
-	//播放暂停
-	function ispaly(){
-		var bofang=document.querySelector("#bofang");
-		var video=document.querySelector("#sp");
-		if(video.paused) {
-			bofang.setAttribute("src","public/play.png");
-			video.play();
-		}else {
-			bofang.setAttribute("src","public/pause.png");
-			video.pause();
-		}
-		}
-	//切换
-	function nextPaly() {
-	 	var bofang=document.querySelector("#bofang");
-	 	var video=document.querySelector("#sp");
-		var src = video.src;
-		var index = srcs.indexOf(src);
-		if(index == srcs.length - 1){
-			video.src = srcs[0]
-		 }else{
-		 	video.src = srcs[index + 1];
-		 }
-		//更改播放图标
-		 	bofang.setAttribute("src","public/play.png");
-		 }
-</script>
-<style>
-	.pc-class{
-		object-fit: cover;
-	}
-	@media (max-width: 450px) {
-	.pc-class {
-		display: none;
-	}
-	.phone-class {
-		display: block !important;
-		background-size: 1920px auto !important;
-    		width: 1920px !important;
-	}
-	.ival {
-		display: none;
-	}
-	}
-
-	.ival{
-	height: 25px;
-	width: auto;
-	}
-</style>
-</body>
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="content-language" content="zh-cn">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>甜甜网址永久引导页</title>
+		<meta name="description" content="你顺手挽住火焰 化作漫天大雪">
+		<meta name="author" content="甜甜网址永久引导页">
+		<meta name="keywords" content="Suinian,甜甜网址永久引导页,碎念">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="甜甜网址永久引导页">
+		<meta name="twitter:description" content="你顺手挽住火焰 化作漫天大雪">
+		<meta name="twitter:keywords" content="Suinian,甜甜网址永久引导页,碎念">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="甜甜网址永久引导页">
+		<meta property="og:description" content="你顺手挽住火焰 化作漫天大雪">
+		<meta name="og:keywords" content="甜甜网址永久引导页">
+		<meta name="theme-color" content="#343434">
+		<link rel="icon" type="image/png" href="NianBrokenStorage/images/avatar.jpg">
+		<link href="NianBrokenStorage/images/avatar.jpg" rel="shortcut icon" type="image/png">
+		<!--<link rel="stylesheet" href="https://www.nianbroken.top/NianBrokenStorage/fonts/iconfont.css" />-->
+		<link rel="stylesheet" href="t/c/font_3711743_jwwj2dn5y5.css">
+		<link rel="stylesheet" href="NianBrokenStorage/css/main.css">
+		<link rel="canonical" href="">
+		<!--Fuck Weixin and Baidu-->
+		<meta http-equiv="Cache-Control" content="no-transform">
+		<meta http-equiv="”Cache-Control”" content="”no-siteapp“">
+		<meta name="applicable-device" content="pc,mobile">
+		<meta name="HandheldFriendly" content="true">
+	</head>
+	<body onselectstart="return false">
+		<span class="mobile btn-mobile-menu">
+		<i class="iconfont NianBroken-zhankai btn-mobile-menu__icon"></i>
+		<i class="iconfont NianBroken-shouqi btn-mobile-close__icon hidden"></i>
+		</span>
+		<header class="panel-cover" style="background-image: url('NianBrokenStorage/images/background-cover.png')">
+			<div class="panel-main">
+				<div class="panel-main__inner panel-inverted">
+					<div class="panel-main__content">
+						<img src="NianBrokenStorage/images/avatar.jpg" width="80" alt="NianBroken logo" class="panel-cover__logo logo">
+						<h1 class="panel-cover__title panel-title">甜甜网址永久引导页</h1>
+						<hr class="panel-cover__divider">
+						<p class="panel-cover__description">你顺手挽住火焰 化作漫天大雪</p>
+						<div class="navigation-wrapper">
+							<div>
+								<nav class="cover-navigation cover-navigation--primary">
+									<ul class="navigation">
+										<li class="navigation__item"><a href="https://iosyyds.net" target="_blank" title="甜甜ios导航">甜甜ios导航</a></li>
+										<li class="navigation__item"><a href="https://pan.iosyyds.net" target="_blank" title="甜甜网盘">甜甜网盘</a></li>
+										<li class="navigation__item"><a href="https://ka.529k.cc/links/D6D75BD8" target="_blank" title="苹果证书">苹果证书</a></li>
+										<li class="navigation__item"><a href="https://haokawx.lot-ml.com/Product/Index/8488" target="_blank" title="免费流量卡">免费流量卡</a></li>
+										<li class="navigation__item"><a href="https://iosyyds.github.io/shadowrocket" target="_blank" title="免费小火箭">免费小火箭</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div>
+								<nav class="cover-navigation navigation--social">
+									<ul class="navigation">
+										<li class="navigation__item">
+											<a href="#" title="QQ" target="_blank">
+											<img src="NianBrokenStorage/svg/qq.svg" width="30" alt="QQ" title="QQ">
+											<span class="label">QQ</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" title="WeChat" target="_blank">
+											<img src="NianBrokenStorage/svg/wechat.svg" width="30" alt="WeChat" title="WeChat">
+											<span class="label">WeChat</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="mailto:yellowjiba@gmail.com" title="Mail" target="_blank">
+											<img src="NianBrokenStorage/svg/mail.svg" width="30" alt="Mail" title="Mail">
+											<span class="label">Mail</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" title="Give me money" target="_blank">
+											<img src="NianBrokenStorage/svg/money_receiving_QR_code.svg" width="30" alt="Give me money" title="Give me money">
+											<span class="label">Give me money</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" rel="author" title="Github" target="_blank">
+											<img src="NianBrokenStorage/svg/github.svg" width="30" alt="Github" title="Github">
+											<span class="label">Github</span>
+											</a>
+										</li>
+										<li class="navigation__item">
+											<a href="#" rel="author" title="Gitee" target="_blank">
+											<img src="NianBrokenStorage/svg/gitee.svg" width="30" alt="Gitee" title="Gitee">
+											<span class="label">Gitee</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<hr class="panel-cover__divider panel-cover__divider--secondary">
+					<p class="copyright">
+						<script>
+							var mydate = new Date();
+							document.writeln("Copyright&nbsp;&copy;&nbsp;2021 - " + mydate.getFullYear() + '&nbsp;甜甜网址永久引导页<br />All&nbsp;Rights&nbsp;Reserved');
+						</script>
+					</p>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript" src="NianBrokenStorage/js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="NianBrokenStorage/js/main.js"></script>
+	</body>
 </html>
